@@ -1,0 +1,110 @@
+.nav_vita{
+    /* background-color: rgba(0,0,0,0.4); */
+    background-color: #f8f9fa;
+    /* border-radius: 3px; */
+    /* border-bottom: 2px solid #b904c9; */
+    margin-bottom: 0vw;
+    font-family: "Montserrat";
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0em;
+    width: 100%;    
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+}
+ .nav_vita .navBrand{
+    position: left;
+    width: 30vw;
+    top: 0vw;
+    border-radius: 0%;
+} 
+.nav_vita .nav-item{
+    text-align: center;
+    line-height: 3vw;
+}
+.nav_vita .nav-item.active {
+    border-bottom: solid 4px #33cccc;
+}
+.nav_vita .nav-link{
+    padding: 0 1.5rem 0.5rem 1.5rem!important;
+    /* display: grid; */
+}
+
+.subNav {
+    background-image: url('../img/neo/plecaheadervita.png');
+    background-size: 80%;
+    text-align: left;
+    padding: 0.8vw 13vw;
+    height: 16vw;
+    z-index: 3;
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.5)
+}
+.subNav img {
+    width: 15vw;
+    margin-top: 0.1vw;
+}
+
+
+@media (max-width: 768.98px) {
+    .nav_vita{
+        /* background-color: rgba(0,0,0,0.6); */
+        background-color: #f8f9fa;
+
+    }
+    /* .nav_vita .navbar-toggler {
+        background: rgba(0, 102, 255, 0.5);
+        border: solid 1px #0066ff;
+        padding: 0.5em 1em;
+    } */
+    /* .nav_vita .navBrand{
+        position: absolute;
+        width: 12vw;
+        top: -3vw;
+        right: 3vw;
+    } */
+    .subNav {
+        background-size: 40%;
+        padding: 0.7vw 0vw;
+        height: 11vw;
+    }
+    .subNav img {
+        width: 12vw;
+    }
+    .nav_vita .nav-item{
+        line-height: 5vw;
+    }
+    .nav_vita .nav-item .nav-link{
+        padding: 0 1.5rem 1rem 1.5rem!important;
+        display: inline;
+        line-height: 7vw;
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 576px) { 
+    /* .nav_vita .navBrand{
+        position: absolute;
+        width: 20vw;
+        top: -3vw;
+        right: 3vw;
+    } */
+    .nav_vita .navbar-toggler {
+        padding: 0.3em 0.7em;
+    }
+    .nav_vita .nav-item .nav-link{
+        padding: 0 1.5rem 1rem 1.5rem!important;
+        display: inline;
+        line-height: 14vw;
+        font-size: 1em;
+    }
+    .subNav {
+        background-size: 40%;
+        padding: 0.7vw 0vw;
+        height: 20vw;
+    }
+    .subNav img {
+        width: 22vw;
+    }
+}
