@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Medium.ttf');
+}   
+@font-face {
+    font-family: 'Montserrat-light';
+    src: url('../fonts/montserrat/Montserrat-Light.ttf');
+}   
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf');
+}   
+@font-face {
+    font-family: 'Montserrat-semiBold';
+    src: url('../fonts/montserrat/Montserrat-SemiBold.ttf');
+}   
+
+@font-face {
+    font-family: 'Lettersforlearners';
+    src: url('../fonts/Lettersforlearners/LettersforLearners.ttf');
+}   
+
+@font-face {
+    font-family: 'Lettersforlearners-lined';
+    src: url('../fonts/Lettersforlearners/LettersforLearners-Lined.ttf');
+}   
+
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-size: 14px;
+    /* font-family: 'Montserrat'; */
+    font-family: 'Montserrat';
+
+    background-image: url('../background-image-name-here');
+    background-color: #E2EDA2;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 60%;
+}
+
+.header_gobierno .nav-link{
+    color: #bb264e !important;
+}
