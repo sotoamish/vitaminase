@@ -175,7 +175,7 @@ function printEetdList() {
         }
     }
 
-    eedtList.innerHTML = toPrint ;
+    eetdList.innerHTML = toPrint ;
 }
 
 //change the video source 
