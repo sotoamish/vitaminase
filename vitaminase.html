@@ -1,473 +1,434 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Vitamina SÉ de Alas y Raíces</title>
 
-        <!-- Favico -->
-        <link rel="icon" type="image/png" href="https://www.alasyraices.gob.mx/img/favico2.png">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vitamina SÉ de Alas y Raíces</title>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139317831-1">
-        </script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-139317831-1');
-        </script>
+  <!-- Favico -->
+  <link rel="icon" type="image/png" href="https://www.alasyraices.gob.mx/img/favico2.png">
 
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <!-- fontAwesome -->
-        <script src="https://kit.fontawesome.com/035f9caf7c.js" crossorigin="anonymous"></script>
-        <!-- Axios HTTP client -->
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <!-- Sweet Alert -->
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.8.2/dist/sweetalert2.all.min.js"></script>
-        <!-- style sheets -->
-        <!-- general styles -->
-        <link rel="stylesheet" href="css/vitamin.css" />
-        <link rel="stylesheet" href="css/Navbar.css" />
-        <link rel="stylesheet" href="css/NavbarVita.css" />
-        <!-- page styles -->
-        <link rel="stylesheet" href="css/Index/vitaminase.css" /> 
-        <link rel="stylesheet" href="css/Index/Saberes.css" />
-        <link rel="stylesheet" href="css/Index/Calacas.css" />
-        <link rel="stylesheet" href="css/Index/Encuesta.css" />
-        <!-- <link rel="stylesheet" href="css/Index/Index_Botonera_Infancias.css"> -->
-        <!-- <link rel="stylesheet" href="css/Index/Index_Botonera_Acciones.css"> -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139317831-1">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-139317831-1');
+  </script>
 
-        <link rel="stylesheet" href="css/Sky_Banner.css" />
-        <link rel="stylesheet" href="css/Suscribe.css" />
-        <link rel="stylesheet" href="css/FooterAyR.css">
-        <link rel="stylesheet" href="css/FooterGob.css"/>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <!-- fontAwesome -->
+  <script src="https://kit.fontawesome.com/035f9caf7c.js" crossorigin="anonymous"></script>
+  <!-- Axios HTTP client -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- Sweet Alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.8.2/dist/sweetalert2.all.min.js"></script>
 
-        <!-- components styles -->
-        <!-- <link rel="stylesheet" href="css/Index/Components/Sub_Apps.css"> -->
-        <link rel="stylesheet" href="css/Index/Components/Sub_Player.css">
-        <!-- <link rel="stylesheet" href="css/Index/Components/Sub_Cartelera.css"> -->
-        <!-- <link rel="stylesheet" href="css/Index/Components/Sub_Videotips.css"> -->
-        <!-- <link rel="stylesheet" href="css/Index/Components/Sub_Blog.css"> -->
 
-        <!-- General Components -->
-        <link rel="stylesheet" href="css/Components/Title.css">
-        <link rel="stylesheet" href="css/Components/Modal_Audio.css">
-        <!-- <link rel="stylesheet" href="css/Components/Modal_Video.css"> -->
-    </head>
-    <body>
-<!-- tag de comentarios de Facebook -->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v6.0"></script>
+  <!-- style sheets -->
+  <!-- general styles -->
+  <link rel="stylesheet" href="css/vitamins.css" />
+  <link rel="stylesheet" href="css/NavbarVitas.css" />
 
-        <div class="container-fluid" style="overflow-x: hidden;">
-            <!-- header gobierno -->
-            <div class="row">
-                <div class="col-12 p-0">                                        
-                    <header>
-                        <section class="header_gobierno bg-light">
-                            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                                <a class="navbar-brand" href="https://www.gob.mx">
-                                    <img src="https://www.alasyraices.gob.mx/landing/gmx.png" width="90" height="30" class="d-inline-block align-top" alt="">
-                                </a>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <section class="navbar-collapse justify-content-end collapse" id="navbarNav" style="">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                    <a class="nav-link" href="https://www.gob.mx/tramites">Trámites</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="https://www.gob.mx/gobierno">Gobierno</a>
-                                    </li>
-                                    <li class="nav-item">
-                                    <a class="nav-link" href="https://www.gob.mx/busqueda">🔍
-                                    </a>
-                                        </li>
-                                    </ul>
-                                </section>
-                            </nav>
-                        </section>
-                    </header>
-                </div>
-            </div>
-                <!-- Banner de HEADER SKY  
-            <div class="Index_Head_Container">                                
-                <div class="row Sky_Banner">
-                    aquí va un banner 
-              </div>      
-            </div> -->
-                <!-- header alas y raices -->
-            <div class="row">
-                <div class="nav_vita"></div>
-            </div>
-<!-- Page Content -->
-   <div class="container">
+  <!-- page styles -->
+  <link rel="stylesheet" href="css/vitaminasess.css" />
+  <link rel="stylesheet" href="css/Sky_Banner.css" />
+  <link rel="stylesheet" href="css/Suscribe.css" />
+  <link rel="stylesheet" href="css/FooterAyR.css">
+  <link rel="stylesheet" href="css/FooterGob.css" />
+
+  <!-- components styles -->
+  <link rel="stylesheet" href="css/Index/Encuesta.css" />
+
+  <!-- General Components -->
+  <!-- <link rel="stylesheet" href="css/Components/Title.css"> -->
+</head>
+
+<body>
+  <!-- tag de comentarios de Facebook -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v6.0"></script>
+
+  <div class="container-fluid" style="overflow-x: hidden;">
+
+    <!-- header gobierno -->
     <div class="row">
-  <p>
-     <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#info" aria-expanded="false" aria-controls="collapseExample2">
-     ¿Qué es Vitamina Sé?
-  </button>
-  <a class="btn btn-info" data-toggle="collapse" href="#juego" role="button" aria-expanded="false" aria-controls="collapseExample">
-    ¿Cómo se juega?
-  </a>
-</p>
-<div class="collapse" id="info">
-  <div class="card card-body">
-    Son pequeñas cápsulas de cuentos, talleres, música y teatro para niñas y niños durante la Jornada Nacional de Sana Distancia, producidas con el apoyo de la comunidad artística mexicana, que se transmitirán, tres por día, a partir del lunes 23 de marzo en la programación de Canal Once y de Once Niñas y Niños del Instituto Politécnico Nacional; así como por Canal 22 y Capital 21. Encuentra aquí una nueva cápsula cada 6 horas en horarios de 8:00, 14:00 y 20:00 horas.
-  </div>
-</div>
-</div>
-<div class="row">
- <!-- Post Content Column -->
-     <div class="col-lg-8 vitamina_video">
-        <!-- Title -->
-        <h1 class="mt-2 vitamina_description">Date una dosis de...</h1>
-        <!-- Author -->
-        <!-- Content VIDEO -->
-        <iframe src="https://www.youtube.com/embed/AUmvLzfmwsc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <hr>
-        <!-- Comments Form -->
-        <div class="fb-comments" data-href="https://alasyraices.gob.mx/vitaminase.html" data-width="650" data-numposts="5"></div>
-        <br><!--/.end Comments Form -->
-     </div>
-      <!-- Sidebar Widgets Column -->
-      <div class="col-md-4"> 
-        <!-- Date/Time -->
-        <p class="center">Encuentra todas las cápsulas en el:</p> 
-   <!-- Side Widget -->
-   <h5 class="card-header">Recetario</h5>
-<div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#c1" aria-expanded="true" aria-controls="c1">
-          <img src="../img/neo/capsulita0.png">
-           <b>Cápsula 5</b> 
-        </button>
-      </h2>
+      <div class="col-12 p-0">
+        <header>
+          <section class="header_gobierno bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="https://www.gob.mx">
+                <img src="https://www.alasyraices.gob.mx/landing/gmx.png" width="90" height="30"
+                  class="d-inline-block align-top" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <section class="navbar-collapse justify-content-end collapse" id="navbarNav" style="">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.gob.mx/tramites">Trámites</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.gob.mx/gobierno">Gobierno</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.gob.mx/busqueda">🔍
+                    </a>
+                  </li>
+                </ul>
+              </section>
+            </nav>
+          </section>
+        </header>
+      </div>
     </div>
 
-    <div id="c1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-        <i>El juego del Aiepo</i>, adaptación de la canción de Luis Pescetti por Ana Cristina Ortega y Antonio Zacruz (LSM) Reprodúcela haciendo clic aquí.
-      </div>
+    <!-- Banner de HEADER SKY  -->
+    <!-- 
+      <div class="Index_Head_Container">                                
+        <div class="row Sky_Banner">
+          aquí va un banner 
+        </div>      
+      </div> 
+    -->
+
+    <!-- header alas y raices -->
+    <div class="row">
+      <div class="nav_vita" alt="Logotipo de Vitamina SÉ,que representa una cápsula medicinal, llena de conocimiento, y que tiene una punta de lápiz para tener memoria. El lema es 'Lo que sé, me fortalece' y barra de navegación con información sobre el funcionamiento de esta mecánica."></div>
     </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#c2" aria-expanded="false" aria-controls="c2">
-            <img src="../img/neo/capsulita0.png">
-           <b>Cápsula 53</b>
-        </button>
-      </h2>
-    </div>
-    <div id="c2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">Percusiones con vasos, imparte Edith Álvarez Gigi. Reprodúcela haciendo clic aquí.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#c3" aria-expanded="false" aria-controls="c3">
-          <img src="../img/neo/capsulita0.png">
-           <b>Cápsula 55</b>
-        </button>
-      </h2>
-    </div>
-    <div id="c3" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body"><i>La cabaña del tío Chueco</i>
-           <br> con Ramón A-Go-Gó
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingFour">
-      <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#c4" aria-expanded="false" aria-controls="c4">
-          <img src="../img/neo/capsulita0.png"><b>Cápsula 64</b>
-        </button>
-      </h2>
-    </div>
-    <div id="c4" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-      <div class="card-body">
-        La abeja confianzuda
-        <br>Pedro Sandoval, integrante de <i>Los Botes Cantan</i>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingFive">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#c5" aria-expanded="false" aria-controls="c5">
-          <img src="../img/neo/capsulita0.png"><b>Cápsula 35</b>
-         </button>
-      </h2>
-    </div>
-    <div id="c5" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-      <div class="card-body">Astrid Perellón
-        <br><i>El elixir del todo. Planteamiento</i>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingSix">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#c6" aria-expanded="false" aria-controls="c6">
-          <img src="../img/neo/capsulita0.png"><b>Cápsula 82</b>
-        </button>
-      </h2>
-    </div>
-    <div id="c6" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-      <div class="card-body">Esténcil poético
-        <br>Imparte Jesús Urbina
-      </div>
-    </div>
-  </div>
-</div>
-   
+    <!-- Activity Description -->
+    <div class="row">
+      <div class="col-12 p-0 queEs">
+        <div class="collapse actInfo" id="queEs">
+          <div class="title">¿Qué es?</div>
+          <div class="description">
+            Son pequeñas cápsulas de cuentos, talleres, música y teatro para niñas y niños elaboradas durante la Jornada Nacional de Sana Distancia, producidas con el apoyo de la comunidad artística mexicana, que puedes encontrar en el canal de Youtube y en las redes sociales de Alas y Raíces, además de que serán televisadas a partir del lunes 23 de marzo en la programación de Canal Once y de Once Niñas y Niños, del Instituto Politécnico Nacional; así como por Canal 22 y Capital 21, en dosis espaciadas para tu deleite personal. ¡Encuentra aquí las nuevas cápsulas todos los días! 
           </div>
-        
         </div>
+      </div>
 
+      <div class="col-12 p-0 comoJuego">
+        <div class="collapse actInfo" id="comoJuego">
+          <div class="row description">
+            <div class="col-lg-3 image_container">
+              <img src="img/vitamin/frasco.png"
+                alt="Frasco de cápsulas para recomendar descargar el recetario. ">
+            </div>
+            <div class="col-lg-9">
+              <div class="title">
+                ¿Estamos listos para recibir una dosis de conocimientos, alegría y diversión? <br>
+                ¡Comenzamos!
+              </div>
+              <div class="description">
+                Sigue estos sencillos pasos:
+                <ol>
+                  <li> Mira la primera cápsula en video, deja un comentario y si te gustó, elige otra dosis. </li>
+                  <li> Descarga el recetario e imprímelo para llevar un registro de las dosis que ya viste y cuál fue la
+                    que más te gustó. </li>
+                  <li> En la caja de comentarios, cuéntanos qué cápsula te gustó más, qué taller hiciste y si te fue difícil, o mándanos una foto
+                    de tu resultado o tu recetario, ya sea con una foto de celular o escaneada a
+                    <a href="mailto:alasyraices@cultura.gob.mx">alasyraices@cultura.gob.mx</a> para ganarte muchos premios. </li>
+                  <li> ¡Síguennos en las redes sociales para saber cuáles son! </li>
+                </ol>
+                ¿Ves qué fácil es quitarte el aburrimiento con Vitamina Sé? ¡Porque lo que sé, me fortalece!
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
-    <!-- /.row -->
+
+    <!-- bloque de videos -->
+    <div class="row">
+      <div class="col-md-10 offset-md-1 main_video_block">
+        <div class="row">
+
+          <!-- Post Content Column -->
+          <div class="col-lg-8 vitamina_video">
+            <!-- Title -->
+            <div class="mt-2 vitamina_description">Date una dosis de...</div>
+
+            <!-- Author -->
+            <!-- Content VIDEO -->
+            <iframe id="vitamin_video_player" src="https://www.youtube.com/embed/6f2VPjhRNkM" frameborder="0" allowfullscreen></iframe>
+            <div id="videoDescription"></div>
+            <div id="videoSuggest">
+              Cuéntanos qué cápsula te gustó más, qué taller hiciste y si te fue difícil, o mándanos una foto de tu
+              resultado o tu recetario y llévate un obsequio.
+            </div>
+            <hr>
+            <!-- Comments Form -->
+            <div class="fb-comments" data-href="https://alasyraices.gob.mx/vitaminase.html" data-width="650"
+              data-numposts="5"></div>
+            <br>
+            <!--/.end Comments Form -->
+          </div>
+
+          <!-- Sidebar Widgets Column -->
+          <div class="col-lg-4 vitamin_list">
+            <div> Encuentra todas las cápsulas en el: </div>
+            <!-- Side Widget -->
+            <div class="card-header header_title">Recetario</div>
+            <div class="accordion" id="accordionList"> ... </div>
+            <div class="card-header header_title">¡Atrévete a hacer los RETOS!</div>
+            <div class="accordion" id="retosList"> ... </div>
+             <div class="card-header header_title">Recuerda el Especial ¡En tu día!</div>
+            <div class="accordion" id="eetdList"> ... </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Descarga el recetario -->
+    <div class="row">
+      <div class="col-12 recetario_block">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="img/vitamin/frasco.png"
+              alt="Enlace de descarga de la plantilla de PDF para descargar el recetario donde llenarás la celda correspondiente a cada uno de los videos que ya viste.">
+          </div>
+          <!-- <div class="col-md-9">
+            <div class="title">
+              Recetario para descargar
+            </div>
+            <div class="description">
+              Imprime tu recetario para llevar un registro de las dosis que ya viste y cuál
+              fue la que más te gustó. ¡Cuando llenes toda tu receta puedes recibir un premio!<br>
+              <a href="../img/neo/recetario.pdf" target="_blank">
+                <button type="button" class="btn">Descarga aquí tu recetario</button>
+              </a>
+            </div> -->
+
+            <!-- DESCARGABLES VITAMINA SE -->
+<div class="container ">
+  <h1 class="font-weight-light text-center text-lg-center mt-4 mb-0"><b>DESCARGABLES: </b>Vitamina Sé para imprimir</h1>
+  <hr class="mt-1 mb-3">¿Conoces a una niña o niño, amigo, primo o vecino que no tenga internet, pero que disfrutaría estos juegos? Invítalo a jugar también con <i>Vitamina Sé</i>. Lee, descarga, imprime y comparte estos ejemplares ¡y compártelos con tus amigos! Porque lo que compartes, también te fortalece.
+  <br>
+  <br>
+  <div class="row text-center">
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="mm/01_sueltas_rojo.pdf" class="d-block mb-4 h-100" target="_blank">
+            <img class="img-fluid img-thumbnail" src="img/neo/VIVO-01.png" alt="">
+          </a> 
+    </div>    
+    <div class=" col-lg-3 col-md-4 col-6">
+      <a href="mm/01_plegable_negro.pdf" class="d-block mb-4 h-100" target="_blank">
+            <img class="img-fluid img-thumbnail" src="img/neo/VIVO-02.png" alt="">
+          </a>
+    </div> 
+      <div class=" col-lg-3 col-md-4 col-6">
+      <a href="mm/02_sueltas_rojo.pdf" class="d-block mb-4 h-100" target="_blank">
+            <img class="img-fluid img-thumbnail" src="img/neo/JUEGO-01.png" alt="">
+          </a>
+    </div>
+    <div class=" col-lg-3 col-md-4 col-6">
+      <a href="mm/02_plegable_negro.pdf" class="d-block mb-4 h-100" target="_blank">
+            <img class="img-fluid img-thumbnail" src="img/neo/JUEGO-02.png" alt="">
+          </a>
+    </div> 
+    <div class=" col-lg-3 col-md-4 col-6">
+      <a href="mm/sueltas_rojo.pdf" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="img/neo/PIENSO-03.png" alt="">
+          </a>
+    </div>
+    <div class=" col-lg-3 col-md-4 col-6">
+      <a href="mm/03_plegable_negro.pdf" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="img/neo/PIENSO-ple-03.png" alt="">
+          </a>
+    </div> <!--
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/G9Rfc1qccH4/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aJeH0KcFkuc/400x300" alt="">
+          </a>
+    </div> -->
+  </div>
+</div> 
+<!-- /.DESCARGABLES VITAMINA SE -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Encuestra de satisfacción -->
+    <div class="row">
+      <div class="col-12 encuesta_block">
+        <div class="row">
+          <div class="col-md-10 offset-md-1 encuesta_content">
+            <div class="encuesta_link">
+              <a href="calacas_encuesta.html"> ¿Disfrutaste el sitio? Contesta nuestra encuesta de satisfacción </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección suscribete -->
+    <div class="row Suscribe" id="suscribe_block">
+      <div class="col-lg-6 Suscribe_Text">
+        No te pierdas de todas la novedades que Alas y Raices tiene para ti
+      </div>
+      <div class="col-lg-5">
+        <div class="input-group">
+          <input type="mail" class="form-control" id="Suscribe_Input" placeholder="Tu_correo@electrónico">
+          <div class="input-group-prepend">
+            <button type="button" id="Suscribe_button" onClick="postSuscribe()"> Suscríbete &nbsp; <i
+                class="far fa-lg fa-envelope"></i> </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer Alas y raices -->
+    <div class="row footer-ayr">
+      <div class="col-12 ">
+        <div class="row">
+          <div class="col-sm-4 sub-div">
+            <span>Estamos en:</span> <br><br>
+
+            <a
+              href="https://www.google.com.mx/maps/place/Secretar%C3%ADa+de+Cultura/@19.4308637,-99.1607373,21z/data=!4m5!3m4!1s0x0:0x581dc9dfb95e46b8!8m2!3d19.4309837!4d-99.1606557?shorturl=1">
+              Av. Paseo de la Reforma 175, piso 5
+              Col. Renacimiento, Alc. Cuauhtémoc
+              C.P. 06500, Ciudad de México, México
+            </a> <br><br>
+          </div>
+          <div class="col-sm-4 sub-div">
+            <a href="https://www.alasyraices.gob.mx/"> <img src="img/ayr2.png" alt="Logo alas y raíces" /> </a><br>
+            Derechos reservados © Secretaría de Cultura,
+            Coordinación Nacional de Desarrollo Cultural Infantil,
+            Programa nacional Alas y Raíces, México, 2019.
+
+            <div class="sub-div-center"><a href="prensa.html">Sala de Prensa</a></div>
+          </div>
+          <div class="col-sm-4 sub-div">
+            Síguenos en nuestras redes: <br> <br>
+            <a href="https://www.facebook.com/alasyraicescultura/"> <i class="fab fa-2x fa-facebook-f"></i> </a> &nbsp;
+            <a href="https://twitter.com/alasyraices"> <i class="fab fa-2x fa-twitter"></i> </a> &nbsp;
+            <a href="https://www.instagram.com/alasyraicescultura/"> <i class="fab fa-2x fa-instagram"></i> </a>&nbsp;
+            <a href="https://www.youtube.com/c/AlasyRa%C3%ADcesCultura/"><i class="fab fa-2x fa-youtube"></i></a>
+            <br><br>
+            Teléfono: <a href="4155-0200">4155-0200 ext 9320</a> <br>
+            correo-e: <a href="alasyraices@cultura.gob.mx">alasyraices@cultura.gob.mx</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer Gobierno -->
+    <div class="row footer-gob">
+      <div class="col-12">
+        <div class="row">
+          <img src="img/fondofooter.png" alt="pleca de separación" id="pleca-gob">
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3 sub-div footer-gob1">
+            <div>
+              <a href="https://www.gob.mx/">
+                <img src="img/logoheader.svg" alt="logo gobierno mx" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.gob.mx/cultura/">
+                <img src="img/logo-cultura.svg" alt="logo secretaria de cultura" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-3 sub-div footer-gob2">
+            <span>Enlaces</span><br><br>
+            <p>
+              <a href="https://www.participa.gob.mx/">Participa</a> <br>
+              <a href="https://www.gob.mx/publicaciones">Publicaciones oficiales</a> <br>
+              <a href="http://www.ordenjuridico.gob.mx/">Marco Jurídico</a> <br>
+              <a href="https://www.plataformadetransparencia.org.mx/web/guest/inicio">Plataforma Nacional de
+                Transparencia</a>
+            </p>
+          </div>
+
+          <div class="col-sm-3 sub-div footer-gob3">
+            <span>¿Qué es gob.mx?</span><br><br>
+            <p>
+              Es el portal único de trámites, información y participación ciudadana. <a
+                href="https://www.gob.mx/que-es-gobmx">Leer más</a>
+            </p>
+
+            <p>
+              <a href="https://datos.gob.mx/">Portal de datos abiertos</a><br>
+              <a href="https://www.gob.mx/accesibilidad">Declaración de accesibilidad</a><br>
+              <a href="https://www.gob.mx/privacidadintegral">Aviso de privacidad integral</a><br>
+              <a href="https://www.gob.mx/privacidadsimplificado">Aviso de privacidad simplificado</a><br>
+              <a href="https://www.gob.mx/terminos">Términos y condiciones</a><br>
+              <a href="https://www.gob.mx/terminos#medidas-seguridad-informacion">Política de seguridad</a><br>
+              <a href="https://www.gob.mx/sitemap">Mapa del sitio</a>
+            </p>
+          </div>
+
+          <div class="col-sm-3 sub-div footer-gob4">
+            <span> <a
+                href="https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54">Denuncia
+                contra servidores públicos</a></span><br><br>
+            <p>
+              Síguenos en: <br>
+              <a href="https://www.facebook.com/gobmexico/"><i class="fab fa-lg fa-facebook-f"></i></a> &nbsp;&nbsp;
+              <a href="https://twitter.com/GobiernoMX"><i class="fab fa-lg fa-twitter"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
-  <!-- /.container -->
- 
-<!-- Reproductor de video Vitamina Se--> 
-<div class="row" id="juego">
-    <div class="col-12 vitamina_block">
-        <div class="row">
-            <div class="col-md-12 vitamina_content">
+</body>
 
-                <div class="row">
-                  <div class="col-md-4  vitamina_content">
-                    <img class="img-fluid" src="../img/neo/frasco.png" alt="Logotipo de Vitamina SÉ, que representa una cápsula medicinal, llena de conocimiento, y que tiene una punta de lápiz para tener memoria. El lema es 'Lo que sé, me fortalece'.">
-                   </div>
+<!-- page elements -->
+<script src="js/common.js"></script>
+<!-- <script src="js/Index/Index_Botonera_Infancias.js"></script> -->
+<!-- <script src="js/Index/Index_Botonera_Acciones.js"></script> -->
+<!-- <script src="js/Index/Index_Ventana_Accion.js"></script> -->
 
-                    <div class="col-md-8 vitamina_description">
-                        <div class="title text-center"><b>¡BIENVENIDOS!</b>
-                            <br>¿Están listos para recibir una dosis de conocimientos?
-                            <br>
-                            <b>¡Comenzamos!</b>
-                        </div> 
-                        <div class="text-left vitamina_title">
-                            <p>Sigue estos sencillos pasos:
-                            <br>1.- Mira la primera cápsula en video, deja un comentario y elige otra dosis.
-                            <br>2.- Descarga el recetario e imprímelo para llevar un registro de las dosis que ya viste y cuál fue la que más te gustó.
-                            <br>3.- Cuéntanos qué cápsula te gustó más, qué taller hiciste y si te fue difícil, o mándanos una foto de tu resultado o tu recetario, ya sea con una foto de celular o escaneada a alasyraices@cultura.gob.mx para ganarte muchos premios.
-                            <br>
-                            <br>4.-¡Síguennos en las redes sociales para saber cuáles son! 
-                            <br>
-                            <br>¿Ves qué fácil es quitarte el aburrimiento con Vitamina Sé? ¡Porque lo que sé, me fortalece!
-                        </div>                                   
-                    </div>
-                  </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!-- page components -->
+<!-- <script src="js/Index/Components/Sub_Apps.js"></script> -->
+<!-- <script src="js/Index/Components/Sub_Cartelera.js"></script> -->
+<!-- <script src="js/Index/Components/Sub_Player.js"></script> -->
+<!-- <script src="js/Index/Components/Sub_Videotips.js"></script> -->
+<!-- <script src="js/Index/Components/Sub_Blog.js"></script> -->
 
-            <!-- Feria de las Calacas -->
-            <div class="row">
-                <div class="col-12 saberes_block">
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 saberes_content">
-                            <div class="row">
-                                <div class="col-12 vitamina_title">
-                                    <span>Descarga aquí tu recetario</span>
-                                    <br>
-                                </div>
-                                <div class="col-lg-8">
-                                    <div class="row">
-                                <div class="col-12 vitamina_description">
-                                <img src="../img/neo/frasco.png" alt="Enlace de descarga de la plantilla de PDF para descargar el recetario donde llenarás la celda correspondiente a cada uno de los videos que ya viste.">
-                                    
-                                </div>
-                            </div>
-                                </div>
-                                <div class="col-lg-4 calacas_description">
-                                    <div class="title">
-                                        Imprime este recetario y registra tus dosis
-                                    </div> 
-                                    <div class="description">
-                                        Saber te fortalece<br><br>
-                                        Bájalo aquí                                        
-                                        <a href="/recetarioVitaminaSE.pdf" target="_blank">
-                                            <img src="../img/index/recetario.png" alt="Enlace de descarga de recetario en pdf">
-                                        </a>                                        
-                                    </div>                            
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
+<!-- general components -->
+<script src="js/Components/Navbarvita.js"></script>
+<!-- <script src="js/Components/Modal_Video.js"></script> -->
+<!-- <script src="js/Components/Modal_Audio.js"></script> -->
+<!-- <script src="js/Components/Title.js"></script> -->
 
-            <!-- Encuestra de satisfacción -->
-            <div class="row">
-                <div class="col-12 encuesta_block">
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 encuesta_content">
-                            <div class="encuesta_link">
-                                <a href="calacas_encuesta.html"> ¿Disfrutaste el sitio? Contesta nuestra encuesta de satisfacción </a>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- data objects -->
+<script src="js/Data/vitamin_data.js"></script>
+<script src="js/Data/retos_data.js"></script>
+<script src="js/Data/eetd_data.js"></script>
+<!-- <script src="js/Data/index_botones_accion_data.js"></script> -->
+<!-- <script src="js/Data/apps_data.js"></script> -->
+<!-- <script src="js/Data/player_data.js"></script> -->
+<!-- <script src="js/Data/Cartelera/cartelera_2020.js"></script> -->
+<!-- <script src="js/Data/blog_data.js"></script> -->
 
-            <!-- Sección suscribete -->
-            <div class="row Suscribe" id="suscribe_block">
-                <div class="col-lg-6 Suscribe_Text">
-                    No te pierdas de todas la novedades que Alas y Raices tiene para ti
-                </div>
-                <div class="col-lg-5">
-                    <div class="input-group">                        
-                        <input type="mail" class="form-control" id="Suscribe_Input" placeholder="Tu_correo@electrónico">
-                        <div class="input-group-prepend">
-                            <button type="button" id="Suscribe_button" onClick="postSuscribe()"> Suscríbete &nbsp; <i class="far fa-lg fa-envelope"></i> </button<>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- index general functions -->
+<!-- <script src="js/Index/Index_General.js"></script> -->
 
-            <!-- footer Alas y raices -->
-            <div class="row footer-ayr">
-                <div class="col-12 ">
-                    <div class="row">
-                        <div class="col-sm-4 sub-div">
-                            <span>Estamos en:</span> <br><br>
-
-                            <a href="https://www.google.com.mx/maps/place/Secretar%C3%ADa+de+Cultura/@19.4308637,-99.1607373,21z/data=!4m5!3m4!1s0x0:0x581dc9dfb95e46b8!8m2!3d19.4309837!4d-99.1606557?shorturl=1">
-                                Av. Paseo de la Reforma 175, piso 5
-                                Col. Renacimiento, Alc. Cuauhtémoc
-                                C.P. 06500, Ciudad de México, México
-                            </a> <br><br>
-                        </div>
-                        <div class="col-sm-4 sub-div"> 
-                            <a href="https://www.alasyraices.gob.mx/"> <img src="img/ayr2.png" alt="Logo alas y raíces" /> </a><br>
-                                Derechos reservados © Secretaría de Cultura,
-                                Coordinación Nacional de Desarrollo Cultural Infantil,
-                                Programa nacional Alas y Raíces, México, 2019.
-                                
-                            <div class="sub-div-center"><a href="prensa.html">Sala de Prensa</a></div> 
-                        </div>
-                        <div class="col-sm-4 sub-div">
-                            Síguenos en nuestras redes: <br> <br>
-                            <a href="https://www.facebook.com/alasyraicescultura/"> <i class="fab fa-2x fa-facebook-f"></i> </a> &nbsp;
-                            <a href="https://twitter.com/alasyraices"> <i class="fab fa-2x fa-twitter"></i> </a> &nbsp;
-                            <a href="https://www.instagram.com/alasyraicescultura/"> <i class="fab fa-2x fa-instagram"></i> </a>&nbsp;
-                            <a href="https://www.youtube.com/c/AlasyRa%C3%ADcesCultura/"><i class="fab fa-2x fa-youtube"></i></a>
-                            <br><br>
-                            Teléfono: <a href="4155-0200">4155-0200 ext 9320</a> <br>
-                            correo-e: <a href="alasyraices@cultura.gob.mx">alasyraices@cultura.gob.mx</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- footer Gobierno -->
-            <div class="row footer-gob">                
-                <div class="col-12">
-                    <div class="row">
-                        <img src="img/fondofooter.png" alt="pleca de separación" id="pleca-gob">
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col-sm-3 sub-div footer-gob1">
-                            <div>
-                                <a href="https://www.gob.mx/"> 
-                                    <img src="img/logoheader.svg" alt="logo gobierno mx" /> 
-                                </a>
-                            </div>
-                            <div>
-                                <a href="https://www.gob.mx/cultura/"> 
-                                    <img src="img/logo-cultura.svg" alt="logo secretaria de cultura" /> 
-                                </a>
-                            </div>
-                        </div>
-                    
-                        <div class="col-sm-3 sub-div footer-gob2">
-                            <span>Enlaces</span><br><br>
-                            <p>
-                                <a href="https://www.participa.gob.mx/">Participa</a> <br>
-                                <a href="https://www.gob.mx/publicaciones">Publicaciones oficiales</a> <br>
-                                <a href="http://www.ordenjuridico.gob.mx/">Marco Jurídico</a> <br>
-                                <a href="https://www.plataformadetransparencia.org.mx/web/guest/inicio">Plataforma Nacional de Transparencia</a>
-                            </p>
-                        </div>
-
-                        <div class="col-sm-3 sub-div footer-gob3">
-                            <span>¿Qué es gob.mx?</span><br><br>
-                            <p>
-                                Es el portal único de trámites, información y participación ciudadana. <a href="https://www.gob.mx/que-es-gobmx">Leer más</a>
-                            </p>
-
-                            <p>
-                                <a href="https://datos.gob.mx/">Portal de datos abiertos</a><br>
-                                <a href="https://www.gob.mx/accesibilidad">Declaración de accesibilidad</a><br>
-                                <a href="https://www.gob.mx/privacidadintegral">Aviso de privacidad integral</a><br>
-                                <a href="https://www.gob.mx/privacidadsimplificado">Aviso de privacidad simplificado</a><br>
-                                <a href="https://www.gob.mx/terminos">Términos y condiciones</a><br>
-                                <a href="https://www.gob.mx/terminos#medidas-seguridad-informacion">Política de seguridad</a><br>
-                                <a href="https://www.gob.mx/sitemap">Mapa del sitio</a>
-                            </p>
-                        </div>
-                        
-                        <div class="col-sm-3 sub-div footer-gob4">
-                            <span> <a href="https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54">Denuncia contra servidores públicos</a></span><br><br>
-                            <p>
-                                Síguenos en: <br>
-                                <a href="https://www.facebook.com/gobmexico/"><i class="fab fa-lg fa-facebook-f"></i></a> &nbsp;&nbsp;
-                                <a href="https://twitter.com/GobiernoMX"><i class="fab fa-lg fa-twitter"></i></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-        </div>
-    </body>
-
-    <!-- page elements -->
-    <script src="js/common.js"></script>
-    <!-- <script src="js/Index/Index_Botonera_Infancias.js"></script> -->
-    <!-- <script src="js/Index/Index_Botonera_Acciones.js"></script> -->
-    <script src="js/Index/Index_Ventana_Accion.js"></script>
-
-    <!-- page components -->
-    <!-- <script src="js/Index/Components/Sub_Apps.js"></script> -->
-    <!-- <script src="js/Index/Components/Sub_Cartelera.js"></script> -->
-    <script src="js/Index/Components/Sub_Player.js"></script>
-    <!-- <script src="js/Index/Components/Sub_Videotips.js"></script> -->
-    <!-- <script src="js/Index/Components/Sub_Blog.js"></script> -->
-
-    <!-- general components -->
-    <script src="js/Components/Navbarvita.js"></script>
-    <!-- <script src="js/Components/Modal_Video.js"></script> -->
-    <script src="js/Components/Modal_Audio.js"></script>
-    <script src="js/Components/Title.js"></script>
-
-    <!-- data objects -->
-    <!-- <script src="js/Data/index_botones_accion_data.js"></script> -->
-    <!-- <script src="js/Data/apps_data.js"></script> -->
-    <script src="js/Data/player_data.js"></script>
-    <!-- <script src="js/Data/Cartelera/cartelera_2020.js"></script> -->
-    <!-- <script src="js/Data/blog_data.js"></script> -->
-
-    <!-- index general functions -->
-    <script src="js/Index/Index_General.js"></script>
 </html>
